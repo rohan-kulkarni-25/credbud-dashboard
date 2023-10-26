@@ -102,45 +102,45 @@ import {
                         </Flex>
                       );
                     }
-                     else if (cell.column.Header === "CLASS") {
-                      data = (
-                        <Flex align='center'>
-                          <Text
-                            me='10px'
-                            color={textColor}
-                            fontSize='sm'
-                            fontWeight='700'>
-                            {cell.value}
-                          </Text>
-                        </Flex>
-                      );
-                    } 
-                     else if (cell.column.Header === "TIME") {
-                      data = (
-                        <Flex align='center'>
-                          <Text
-                            me='10px'
-                            color={textColor}
-                            fontSize='sm'
-                            fontWeight='700'>
-                            {cell.value}
-                          </Text>
-                        </Flex>
-                      );
-                    } 
-                    else if (cell.column.Header === "ROOM") {
-                      data = (
-                        <Text color={textColor} fontSize='sm' fontWeight='700'>
-                          {cell.value}
-                        </Text>
-                      );
-                    } else if (cell.column.Header === "DATE") {
-                      data = (
-                        <Text color={textColor} fontSize='sm' fontWeight='700'>
-                          {cell.value}
-                        </Text>
-                      );
-                    }
+                    //  else if (cell.column.Header === "CLASS") {
+                    //   data = (
+                    //     <Flex align='center'>
+                    //       <Text
+                    //         me='10px'
+                    //         color={textColor}
+                    //         fontSize='sm'
+                    //         fontWeight='700'>
+                    //         {cell.value}
+                    //       </Text>
+                    //     </Flex>
+                    //   );
+                    // } 
+                    //  else if (cell.column.Header === "TIME") {
+                    //   data = (
+                    //     <Flex align='center'>
+                    //       <Text
+                    //         me='10px'
+                    //         color={textColor}
+                    //         fontSize='sm'
+                    //         fontWeight='700'>
+                    //         {cell.value}
+                    //       </Text>
+                    //     </Flex>
+                    //   );
+                    // // } 
+                    // else if (cell.column.Header === "ROOM") {
+                    //   data = (
+                    //     <Text color={textColor} fontSize='sm' fontWeight='700'>
+                    //       {cell.value}
+                    //     </Text>
+                    //   );
+                    // } else if (cell.column.Header === "DATE") {
+                    //   data = (
+                    //     <Text color={textColor} fontSize='sm' fontWeight='700'>
+                    //       {cell.value}
+                    //     </Text>
+                    //   );
+                    // }
                     return (
                       <Td
                         {...cell.getCellProps()}

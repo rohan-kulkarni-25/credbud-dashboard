@@ -39,6 +39,17 @@ export const TeacherTT = [
   },
 ];
 
+export const UTMarks = [
+  {
+    Header: "SUBJECT",
+    accessor: "subject",
+  },
+  {
+    Header: "MARKS",
+    accessor: "marks",
+  },
+]
+
 export const columnsDataCheck = [
   {
     Header: "NAME",

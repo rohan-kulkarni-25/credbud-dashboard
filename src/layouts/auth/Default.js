@@ -1,16 +1,12 @@
 // Chakra imports
 import { Box, Flex, Icon, Text } from "@chakra-ui/react";
-import PropTypes from "prop-types";
+
 import React from "react";
 import Footer from "components/footer/FooterAuth";
-import FixedPlugin from "components/fixedPlugin/FixedPlugin";
-// Custom components
-import { NavLink } from "react-router-dom";
-// Assets
-import { FaChevronLeft } from "react-icons/fa";
+
 
 function AuthIllustration(props) {
-  const { children, illustrationBackground } = props;
+  const { children } = props;
   // Chakra color mode
   return (
     <Flex position='relative' h='max-content'>
@@ -24,12 +20,28 @@ function AuthIllustration(props) {
         w='100%'
         maxW={{ md: "66%", lg: "1313px" }}
         mx='auto'
-        pt={{ sm: "50px", md: "0px" }}
-        px={{ lg: "30px", xl: "0px" }}
-        ps={{ xl: "70px" }}
-        justifyContent='start'
+        // pt={{ sm: "50px", md: "0px" }}
+        // px={{ lg: "30px", xl: "0px" }}
+        // ps={{ xl: "70px" }}
+        justifyContent='center'
+        alignItems='center'
         direction='column'>
-        <NavLink
+        {children}
+      </Flex>
+
+    </Flex>
+  );
+}
+// PROPS
+
+// AuthIllustration.propTypes = {
+//   illustrationBackground: PropTypes.string,
+//   image: PropTypes.any,
+// };
+
+export default AuthIllustration;
+
+{/* <NavLink
           to='/admin'
           style={() => ({
             width: "fit-content",
@@ -51,9 +63,9 @@ function AuthIllustration(props) {
               Back to Simmmple
             </Text>
           </Flex>
-        </NavLink>
-        {children}
-        <Box
+        </NavLink> */}
+
+{/* <Box
           display={{ base: "none", md: "block" }}
           h='100%'
           minH='100vh'
@@ -70,18 +82,4 @@ function AuthIllustration(props) {
             bgPosition='50%'
             position='absolute'
             borderBottomLeftRadius={{ lg: "120px", xl: "200px" }}></Flex>
-        </Box>
-        <Footer />
-      </Flex>
-      <FixedPlugin />
-    </Flex>
-  );
-}
-// PROPS
-
-AuthIllustration.propTypes = {
-  illustrationBackground: PropTypes.string,
-  image: PropTypes.any,
-};
-
-export default AuthIllustration;
+        </Box> */}
