@@ -42,7 +42,7 @@ export default function Settings() {
   // Chakra Color Mode
   return (
     <Box pt={{ base: "130px", md: "80px", xl: "80px" }}>
-      <SimpleGrid
+      {/* <SimpleGrid
         mb='20px'
         columns={{ sm: 1, md: 2 }}
         spacing={{ base: "20px", xl: "20px" }}>
@@ -59,7 +59,7 @@ export default function Settings() {
           columnsData={columnsDataComplex}
           tableData={tableDataComplex}
         />
-      </SimpleGrid>
+      </SimpleGrid> */}
     </Box>
   );
 }

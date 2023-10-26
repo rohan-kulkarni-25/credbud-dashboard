@@ -1,0 +1,23 @@
+[
+    {
+    "subject":"DAA",
+    "class":"BE",
+    "time": "12:30", 
+    "date": "Oct 24, 2022",
+    "room": 1419  
+  },
+  {
+    "subject":"SPM",
+    "class":"TE",
+    "time": "1:30", 
+    "date": "Oct 24, 2022",
+    "room": 1407  
+  },
+    {
+    "subject":"Soft. Engg.",
+    "class":"SE",
+    "time": "4:30", 
+    "date": "Oct 24, 2022",
+    "room": 1409  
+  }
+]

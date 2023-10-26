@@ -6,7 +6,7 @@ import {
   MdPerson,
   MdHome,
   MdLock,
-  MdOutlineShoppingCart,
+  MdSupervisorAccount,
 } from "react-icons/md";
 
 // Admin Imports
@@ -14,7 +14,7 @@ import MainDashboard from "views/admin/default";
 import NFTMarketplace from "views/admin/marketplace";
 import Profile from "views/admin/profile";
 import DataTables from "views/admin/dataTables";
-import RTL from "views/admin/rtl";
+// import RTL from "views/admin/rtl";
 
 // Auth Imports
 import SignInCentered from "views/auth/signIn";
@@ -28,12 +28,12 @@ const routes = [
     component: MainDashboard,
   },
   {
-    name: "NFT Marketplace",
+    name: "Staff Management",
     layout: "/admin",
     path: "/nft-marketplace",
     icon: (
       <Icon
-        as={MdOutlineShoppingCart}
+        as={MdSupervisorAccount}
         width='20px'
         height='20px'
         color='inherit'
@@ -43,7 +43,7 @@ const routes = [
     secondary: true,
   },
   {
-    name: "Data Tables",
+    name: "Student Analysis",
     layout: "/admin",
     icon: <Icon as={MdBarChart} width='20px' height='20px' color='inherit' />,
     path: "/data-tables",
@@ -57,19 +57,19 @@ const routes = [
     component: Profile,
   },
   {
-    name: "Sign In",
+    name: "Sign Out",
     layout: "/auth",
     path: "/sign-in",
     icon: <Icon as={MdLock} width='20px' height='20px' color='inherit' />,
     component: SignInCentered,
   },
-  {
-    name: "RTL Admin",
-    layout: "/rtl",
-    path: "/rtl-default",
-    icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
-    component: RTL,
-  },
+  // {
+  //   name: "RTL Admin",
+  //   layout: "/rtl",
+  //   path: "/rtl-default",
+  //   icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
+  //   component: RTL,
+  // },
 ];
 
 export default routes;

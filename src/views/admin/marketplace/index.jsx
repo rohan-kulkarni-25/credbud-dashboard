@@ -62,7 +62,7 @@ export default function Marketplace() {
   return (
     <Box pt={{ base: "180px", md: "80px", xl: "80px" }}>
       {/* Main Fields */}
-      <Grid
+      {/* <Grid
         mb='20px'
         gridTemplateColumns={{ xl: "repeat(3, 1fr)", "2xl": "1fr 0.46fr" }}
         gap={{ base: "20px", xl: "20px" }}
@@ -298,7 +298,7 @@ export default function Marketplace() {
             />
           </Card>
         </Flex>
-      </Grid>
+      </Grid> */}
       {/* Delete Product */}
     </Box>
   );

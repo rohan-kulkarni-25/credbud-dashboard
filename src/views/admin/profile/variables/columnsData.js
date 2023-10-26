@@ -34,7 +34,7 @@ export const TeacherTT = [
     accessor: "date",
   },
   {
-    Header: "Room Number",
+    Header: "ROOM",
     accessor: "room",
   },
 ];

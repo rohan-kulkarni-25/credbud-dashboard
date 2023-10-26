@@ -21,7 +21,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 // Assets
 import navImage from 'assets/img/layout/Navbar.png';
-import { MdNotificationsNone, MdInfoOutline } from 'react-icons/md';
+import { MdNotificationsNone, MdInfoOutline,MdOutlineQrCodeScanner} from 'react-icons/md';
 import { FaEthereum } from 'react-icons/fa';
 import routes from 'routes.js';
 import { ThemeEditor } from './ThemeEditor';
@@ -73,6 +73,10 @@ export default function HeaderLinks(props) {
 			</Flex>
 			<SidebarResponsive routes={routes} />
 			<Menu>
+				
+			</Menu>
+			
+			<Menu>
 				<MenuButton p="0px">
 					<Icon mt="6px" as={MdNotificationsNone} color={navbarIcon} w="18px" h="18px" me="10px" />
 				</MenuButton>
@@ -95,17 +99,17 @@ export default function HeaderLinks(props) {
 						</Text>
 					</Flex>
 					<Flex flexDirection="column">
-						<MenuItem _hover={{ bg: 'none' }} _focus={{ bg: 'none' }} px="0" borderRadius="8px" mb="10px">
+						{/* <MenuItem _hover={{ bg: 'none' }} _focus={{ bg: 'none' }} px="0" borderRadius="8px" mb="10px">
 							<ItemContent info="Horizon UI Dashboard PRO" aName="Alicia" />
 						</MenuItem>
 						<MenuItem _hover={{ bg: 'none' }} _focus={{ bg: 'none' }} px="0" borderRadius="8px" mb="10px">
 							<ItemContent info="Horizon Design System Free" aName="Josh Henry" />
-						</MenuItem>
+						</MenuItem> */}
 					</Flex>
 				</MenuList>
 			</Menu>
 
-      <Menu>
+      {/* <Menu>
         <MenuButton p='0px'>
           <Icon
             mt='6px'
@@ -162,16 +166,16 @@ export default function HeaderLinks(props) {
             </Link>
           </Flex>
         </MenuList>
-      </Menu>
+      </Menu> */}
 
-			<ThemeEditor navbarIcon={navbarIcon} />
+			{/* <ThemeEditor navbarIcon={navbarIcon} /> */}
 
 			<Menu>
 				<MenuButton p="0px">
 					<Avatar
 						_hover={{ cursor: 'pointer' }}
 						color="white"
-						name="Adela Parkson"
+						name="Geeta Navale"
 						bg="#11047A"
 						size="sm"
 						w="40px"
@@ -190,7 +194,7 @@ export default function HeaderLinks(props) {
 							fontSize="sm"
 							fontWeight="700"
 							color={textColor}>
-							👋&nbsp; Hey, Adela
+							👋&nbsp; Hey, Geeta
 						</Text>
 					</Flex>
 					<Flex flexDirection="column" p="10px">
